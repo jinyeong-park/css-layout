@@ -1,16 +1,13 @@
 body {
-    margin: 0;
+    margin: 0 auto;
     font-family: "Montserrat",sans-serif;
 }
 
   .zone {
-      /* padding:30px 50px;
-      margin:40px 60px; */
-      padding:0;
-      margin:0;
+      /* padding:30px 50px;*/
       cursor:pointer;
       /* display:inline-block; */
-      color:#ffffff;
+      color:#fff;
       font-size:2em;
       border-radius:4px;
       border:1px solid #bbb;
@@ -24,7 +21,9 @@ body {
       box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
   }
 
-  /* NAV BAR */
+/***********************************************************************
+ *  Nav Bar
+ **********************************************************************/
   .main-nav {
       display: flex;
       list-style: none;
@@ -52,18 +51,34 @@ body {
       text-decoration: none;
   }
 
-  /* COVER */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+
+
+  /***********************************************************************
+  *  Cover
+  **********************************************************************/
   .container {
+     /* show heigh: auto */
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: 70vh;
 }
 
-  /* GRID */
+  .cover {
+    width: 30rem;
+  }
+
+  /***********************************************************************
+  *  Grid Panel
+  **********************************************************************/
   .grid-wrapper {
     display: grid;
-    grid-gap: 20px;
+    /* grid-gap: 20px; */
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr))
   }
 
@@ -77,11 +92,20 @@ body {
       padding: 130px;
       margin: 20px;
   }
+  /* .box:hover {
+    -webkit-transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+    -o-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+} */
 
-  footer {
-      text-align: center;
-  }
-
+/***********************************************************************
+ *  Footer
+ **********************************************************************/
+ footer {
+  text-align: center;
+  background-color: #444;
+}
 
   /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
    /***********************************************************************
@@ -104,8 +128,7 @@ body {
     background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
 }
 
-
-    /***********************************************************************
+  /***********************************************************************
    *  red Background
    **********************************************************************/
    .red{
